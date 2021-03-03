@@ -1,6 +1,8 @@
 # ¿Cómo cree mi propio lenguaje de programación?  :scream:
 
-Sí eres programador o ya tienes experiencia con los lenguajes de programación sabras que existen muchísimos hoy en día, cada uno con sus fortalezas y debilidades, su sintaxis y peculiaridades. Quizás hayas pensado en que un lenguaje sería mejor con cierta cualidad u otra, o tal vez pensaste en resolver un problema, pero las herramientas que tenias no se acoplaban lo suficiente a lo que necesitabas. Para ello una solución es crear tu propio lenguaje de programación, y aquí te mostrare como lo hice. :wink:
+<img src="https://img.freepik.com/free-photo/working-code_1098-19858.jpg?size=626&ext=jpg&ga=GA1.2.1482204611.1614734745" alt="computer image" width=1000 height= 400>
+
+Sí eres programador o ya tienes experiencia con los lenguajes de programación sabrás que existen muchísimos hoy en día, cada uno con sus fortalezas y debilidades, su sintaxis y peculiaridades. Quizás hayas pensado en que un lenguaje sería mejor con cierta cualidad u otra, o tal vez pensaste en resolver un problema, pero las herramientas que tenías no se acoplaban lo suficiente a lo que necesitabas. Para ello una solución es crear tu propio lenguaje de programación, y aquí te mostraré como lo hice. :wink:
 
 ## ¿Qué debes tomar en cuenta?
 
@@ -37,7 +39,7 @@ Luego de eso también se debe pensar en su sintaxis y semántica. Que en pocas p
 
 Deberas buscar que tu lenguaje sea facil y claro de entender, según su proposito.
 
-## ¿Y luego? :face_with_monocle: 
+## ¿Y luego? :thinking:
 
 Con todo eso y más se coloca las manos a la obra.
 
