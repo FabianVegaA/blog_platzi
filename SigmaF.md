@@ -16,7 +16,7 @@ Una de las principales cualidades de un lenguaje de programación es el paradigm
     - Programación Funcional
     - Programación Lógica  
 
-Y para cada uno de estos paradigmas podemos encontrar un lenguaje, por ejemplo:
+Y para cada uno de estos paradigmas podemos encontrar un lenguaje, como:
 
 * C (Imperativo, procedimental)
 * Java (Imperativo, POO)
