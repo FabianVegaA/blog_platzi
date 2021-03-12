@@ -33,7 +33,9 @@ También existen los lenguajes Multiparadigma, lenguajes en los que puedes progr
 
 Para crear un nuevo lenguaje, debemos tomar en cuenta todas estas variables, y contar algunas más, como por ejemplo, cómo hará el computador para entender tu lenguaje. Existen varias maneras de hacerlo, con Intérpretes o Compiladores principalmente. En grandes rasgos, un lenguaje Compilados, son aquellos que se traducen a un lenguaje máquina para que esta pueda entenderlo, en cambio los lenguajes interpretados se leen instrucción por instrucción y ejecutándose paso a paso.
 
-![compilacion vs interpretacion](https://imgur.com/25U26xw)
+
+![Imgur](https://imgur.com/a/Jsq8HsZ)
+
 
 ### Sintaxis y Semántica
 
