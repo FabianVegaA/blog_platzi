@@ -1,49 +1,53 @@
-# ¿Cómo creé mi propio lenguaje de programación?  :scream:
+# Cómo creé mi propio lenguaje de programación
 
-<img src="https://img.freepik.com/free-photo/working-code_1098-19858.jpg?size=626&ext=jpg&ga=GA1.2.1482204611.1614734745" alt="computer image" width=1000 height= 500>
+![Persona programando](https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1052&q=805)
 
-Sí eres programador o ya tienes experiencia con los lenguajes de programación sabrás que existen muchísimos hoy en día, cada uno con sus fortalezas y debilidades, su sintaxis y peculiaridades. Quizás hayas pensado en que un lenguaje sería mejor con cierta cualidad u otra, o tal vez pensaste en resolver un tipo de problema, pero las herramientas que tenías no se acoplaban lo suficiente a lo que necesitabas. Para ello una solución que encontré fue crear un lenguaje de programación propio. Aquí te cuento cómo lo hice. :wink:
+Si eres programador o ya tienes experiencia con los lenguajes de programación sabrás que existen muchísimos hoy en día, cada uno con sus fortalezas y debilidades, su sintaxis y peculiaridades. 
 
-## ¿Qué debes tomar en cuenta?
+Quizás hayas pensado en que un lenguaje sería mejor con cierta cualidad. O tal vez pensaste en resolver un tipo de problema, pero las herramientas que tenías no se acoplaban lo suficiente a lo que necesitabas. Para ello una solución que encontré fue crear mi propio lenguaje de programación. Aquí te contaré cómo lo hice. :wink:
+
+## ¿Qué tomar en cuenta antes de empezar?
 
 ### Paradigma
-Una de las principales cualidades de un lenguaje de programación es el paradigma al que pertenece. Existe dos clasificaciones principales para los paradigmas. Los paradigmas **imperativo** y **declarativo**. Aquí te van algunos ejemplos:
+Una de las principales cualidades de un lenguaje de programación es el [paradigma](https://platzi.com/cursos/historia-programacion/) al que pertenece. Existen dos clasificaciones principales de ellos: **imperativos** y **declarativos**. Por ejemplo:
 
 * Imperativos:
-    - Programación Procedimental
-    - Programación Orientada a Objetos o POO
+    - Programación procedimental
+    - Programación orientada a objetos o POO
 * Declarativo:
-    - Programación Funcional
-    - Programación Lógica  
+    - Programación funcional
+    - Programación lógica  
 
-Y para cada uno de estos paradigmas podemos encontrar un lenguaje, como:
+Dentro de cada uno de estos paradigmas podemos encontrar varios lenguajes, como:
 
-* C (Imperativo, procedimental)
-* Java (Imperativo, POO)
-* Haskell (Declarativo, funcional)
-* Prolog (Declarativo, lógico)
+* C (imperativo, procedimental).
+* Java (imperativo, POO).
+* Haskell (declarativo, funcional).
+* Prolog (declarativo, lógico).
 
-También existen los lenguajes **multiparadigma**, lenguajes en los que puedes programar en múltiples paradigmas o mezclando varios paradigmas. Algunos ejemplares son:
+También existen los lenguajes **multiparadigma**, lenguajes en los que puedes programar en múltiples paradigmas o mezclando varios paradigmas. Algunos ejemplos son:
 
 * Python
-* Javascript
+* JavaScript
 * Julia
 
-### Interpretado o Compilado
+### Interpretado o compilado
 
-Para crear un nuevo lenguaje, debemos tomar en cuenta todas estas variables, como por ejemplo, cómo hará el computador para entender tu lenguaje. Existen varias maneras de hacerlo, con **intérpretes** o **compiladores** principalmente. En grandes rasgos, los lenguajes compilados, son aquellos que se traducen a un lenguaje máquina para que esta pueda entenderlo, en cambio los lenguajes interpretados se leen instrucción por instrucción y ejecutándose paso a paso.
+Para crear un nuevo lenguaje debes tomar en cuenta cómo el computador entenderá tu lenguaje. Puede hacerse con **intérpretes** o **compiladores**. 
+
+A grandes rasgos, los lenguajes compilados son aquellos que se traducen a un lenguaje máquina para que el computador pueda entenderlo desde un archivo ejecutable. En cambio, los lenguajes interpretados se leen instrucción por instrucción y se ejecutan paso a paso conforme se leen.
 
 
-![Imgur](https://i.imgur.com/25U26xw.png)
+![Imgur](https://i.imgur.com/kn5IDhU.png)
 
 
-### Sintaxis y Semántica
+### Sintaxis y semántica
 
-Luego de eso también se debe pensar en su sintaxis y semántica. Ahora te explico que son: 
+Luego de eso también se debe pensar en su sintaxis y semántica.
 
-- Sintaxis: En pocas palabras la sintaxis se define como las reglas que verifican si el *string* de un programa esta bien escrito o no. 
+- Sintaxis: se define como las reglas que verifican si el conjunto de símbolos de un programa está bien escrito o no. 
 
-- Semántica: La semántica se describe en como el computador puede entender el programa cuando lo ejecutamos. Para ello lo que se hace es postular una maquina abstracta con las reglas de ejecucion de un programa.
+- Semántica:  es cómo el computador entiende el programa cuando lo ejecutamos. Para ello postula una máquina abstracta con las reglas de ejecución de un programa.
 
 > Si quieres saber más de la maquina abstracta te recomiendo el 
 [Curso de Historia de la Programación: Lenguajes y Paradigmas](https://platzi.com/clases/historia-programacion/) 
@@ -52,24 +56,25 @@ Deberás buscar que tu lenguaje sea fácil y claro de entender, según su propó
 
 ## ¿Y ahora cómo empiezo a crear mi lenguaje? :thinking:
 
-Así fue como comencé con mi propio lenguaje de programación, al ver el [**Curso de Introducción al Desarrollo de Lenguajes de Programación**](https://platzi.com/clases/desarrollo-lenguajes-programacion/) y el [**Curso de Creación Lenguajes de Programación: Intérpretes**](https://platzi.com/clases/interpretes-software/). Decidí que fuese un lenguaje interpretado para seguir con el curso, además de que es una de las formas más simples de comenzar con un lenguaje. 
+Una vez que pensé en los puntos anteriores fue que comencé mi propio lenguaje de programación al ver el [Curso de Introducción al Desarrollo de Lenguajes de Programación](https://platzi.com/cursos/desarrollo-lenguajes-programacion/) y el [Curso de Creación Lenguajes de Programación: Intérpretes](https://platzi.com/cursos/interpretes-software/). 
 
-En un comienzo no tenia un problema claro el cual resolver, sino que lo veia más como un reto y ambicioso proyecto. 
+Decidí que sería un lenguaje interpretado para seguir con el curso. Además que es una de las formas más simples de comenzar con un lenguaje. En un comienzo no tenia un problema claro que resolver, sino que lo veía más como un reto y ambicioso proyecto. 
 
 ### No te olvides de los detalles 
 
-Cito a mi profesor de Lenguajes de programación.
-> " Hacer un lenguaje de programación es mitad diseñarlo y hacerlo bien y la otra mitad es community management."
+Citando a mi profesor de lenguajes de programación:
+> "Hacer un lenguaje de programación es mitad diseñarlo y hacerlo bien y la otra mitad es community management".
 
-Mi lenguaje lo llamé [SigmaF](https://github.com/FabianVegaA/sigmaF), ya que quería que fuese funcional, pues estaba en la fiebre de Haskell y quería que fuera lo más matemático posible, aunque no estoy seguro si lo logré :sweat_smile:. 
-Es así como elegí una letra griega que me gustara y quedara bien, en un nombre sucedido por "F" por funcional. Y así es como nació [SigmaF](https://github.com/FabianVegaA/sigmaF).
+Mi lenguaje lo llamé [SigmaF](https://github.com/FabianVegaA/sigmaF) porque quería que fuese funcional, ya que yo estaba muy emocionado de haber conocido Haskell  y para que sonara lo más matemático posible.
 
-![sigmaF](https://camo.githubusercontent.com/51012dfbaa85e52d026f6aba844a7cb691dce4693424b709322786934f6748b8/68747470733a2f2f692e696d6775722e636f6d2f625a52706145782e706e67)
+Elegí una letra griega que me gustara y quedara bien, en un nombre sucedido por la letra F por funcional. Y así es como nació el concepto de SigmaF.
+
+![SigmaF consola](https://images.unsplash.com/photo-1616091238212-aca6808e3cf0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1750&q=80)
 
 ### Dale un propósito  :raised_hands: 
 
-En este momento el propósito de [SigmaF](https://github.com/FabianVegaA/sigmaF) es que fuese un lenguaje puente entre el **paradigma funcional** y el **paradigma imperativo**, pues la mayoría no suelen ser fáciles de aprender como Haskell que por experiencia son complejos de aprender cuando estás acostumbrado programar imperativamente. Por ello, quiero que este sea un lenguaje fácil de aprender para cualquier programador y los que no lo son aun, siendo la puerta para otros lenguajes funcionales.
+En este momento el propósito de SigmaF es ser un puente entre el **paradigma funcional** y el **paradigma imperativo**, ya que la mayoría no suelen ser tan fáciles de aprender, especialmente si te has acostumbrado a programar imperativamente. Por ello quiero que este sea un lenguaje fácil de aprender para cualquier programador, y los que no lo son aún, siendo la puerta para otros lenguajes funcionales.
 
 ## Ahora te toca a ti crear tu lenguaje
 
-Espero que con todo esto te animes a crear tu propio lenguaje o a apoyar otros en desarrollo. Ya tienes varias herramientas a tu disposición. Para profundizar en ellas toma el [**Curso de Introducción al Desarrollo de Lenguajes de Programación**](https://platzi.com/clases/desarrollo-lenguajes-programacion/) y cuéntame aquí en comentarios cómo será tu lenguaje. :muscle:
+Espero que con todo esto te animes a crear tu propio lenguaje o a apoyar otros en desarrollo. Ya tienes varias herramientas a tu disposición, para profundizar en ellas toma el [**Curso de Introducción al Desarrollo de Lenguajes de Programación**](https://platzi.com/clases/desarrollo-lenguajes-programacion/) y cuéntame aquí en comentarios cómo será tu lenguaje. :muscle:
