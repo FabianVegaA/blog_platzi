@@ -69,6 +69,10 @@ Mi lenguaje lo llamé [SigmaF](https://github.com/FabianVegaA/sigmaF) porque que
 
 Elegí una letra griega que me gustara y quedara bien, en un nombre sucedido por la letra F por funcional. Y así es como nació el concepto de SigmaF.
 
+Otro detalle importante es cómo los demás interactúan con tu lenguaje. Es decir, como está construido, en mi caso yo use **Python 3.8** y **TDD** o ***Test-driven development*** para su desarrollo lo que agiliza la implementación de nuevas cualidades y permite anticiparte a los problemas o *bugs* que se puedan presentar.
+
+Si tienes más interés por saber como lo hice o te interesa contribuir en este lenguaje te invito a mi repositorio en GitHub que encontraras en este [enlace](https://github.com/FabianVegaA/sigmaF).
+
 ![SigmaF consola](https://images.unsplash.com/photo-1616091238212-aca6808e3cf0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1750&q=80)
 
 ### Dale un propósito  :raised_hands: 
