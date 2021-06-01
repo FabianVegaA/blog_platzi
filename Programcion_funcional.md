@@ -7,10 +7,12 @@ La programación funcional a diferencia de la programación procedimental o la *
 ## ¿Cuáles son sus ventajas?
 En el punto de vista tecnico existen varias ventajas sobre otros paradigmas como su facilidad para poder utilizar la concurrencia y la ausencia de *side-effect* o efectos colaterales. Además de una sintaxis limpia y clara.
 
+
+
 ## ¿Cómo comienzo?
 Esto depende, existen varios lenguajes multiparadigmas que admite en cierta forma la programación funcional, como Python y Javascript. Tambien existen lenguajes puramente funcionales, como Lisp, Scala y [Haskell](http://aprendehaskell.es/main.html) (mi favorito), que permiten este paradigma en todo su explendor.
 
-> Por cierto, yo cree mi propio lenguaje de programación open-source y funcional que llame *SigmaF*, te dejo el repositorio de [GitHub](https://github.com/FabianVegaA/sigmaF) y un post para saber más sobre este [blog](https://platzi.com/blog/crear-lenguaje-programacion/). Tambien puedes preguntarme a traves de mi Twitter [@fabianmativeal](https://twitter.com/fabianmativeal).
+> Por cierto, yo cree mi propio lenguaje de programación open-source y funcional llamado *SigmaF*, te dejo el repositorio de [GitHub](https://github.com/FabianVegaA/sigmaF) y un post para saber más sobre este haz click [aquí](https://platzi.com/blog/crear-lenguaje-programacion/). Tambien puedes preguntarme a traves de mi Twitter [@fabianmativeal](https://twitter.com/fabianmativeal).
 
 
 ### Algunos ejemplos
@@ -24,7 +26,7 @@ Esto depende, existen varios lenguajes multiparadigmas que admite en cierta form
 *****
 ```
 
-Pues ahora te dejo con la solución funcional usando *SigmaF*
+Pues ahora te dejo con la solución funcional usando *SigmaF*.
 ``` Haskell
 let stairs = fn i::int -> str {
 	if i == 1 then {
@@ -58,6 +60,8 @@ object HolaMundo {
 ```
 ## Mi recomendación
 Aprender un nuevo paradigma es buenisimo para poder ver la programación desde otra perspectiva y si logras aprender a utilizarlo tendras una nueva herramienta poderosisima para entrentarte a casi cualquier problema en la programación. Desde mi experiencia, pasar de la programación *imperativa* a la funcional es dificil, pero estoy convecido de que vale la pena.
+
+Si te interesa seguir aprendiendo del tema te recomiendo [Curso de Historia de la Programación: Lenguajes y Paradigmas](https://platzi.com/clases/historia-programacion/), [Curso de Programación Funcional con Scala](https://platzi.com/clases/scala/) y este tutorial de [Haskell](http://aprendehaskell.es/main.html).
 
 
 
