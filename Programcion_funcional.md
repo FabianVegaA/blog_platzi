@@ -1,6 +1,6 @@
 # Qué es la programación funcional
 
-Muchas veces dentro del mundo de la programación debes haber escuchado sobre la programación orientada a objetos (*OOP* por sus siglas en inglés) o programcion procedimental. A esto se les llama paradigmas de la programación, que son formas de solucionar un problema, pero ¿alguna vez has oido hablar de la programación funcional? Si no, ahora te cuento y si has escuchado de ella te cuento porque deberias aprenderla.
+Muchas veces dentro del mundo de la programación debes haber escuchado sobre la programación orientada a objetos (*OOP* por sus siglas en inglés) o programación procedimental. A esto se les llama paradigmas de la programación, que son formas de solucionar un problema, pero ¿alguna vez has oido hablar de la programación funcional? Si no, ahora te cuento y si has escuchado de ella te cuento porque deberias aprenderla.
 
 La programación funcional a diferencia de la programación procedimental o la *OOP*, es un paradigma **declarativo** ¿qué signica eso? Pues a grandes razgos en estos paradigmas tu en vez de decir "cómo", tu dices que es lo que necesitas.
 
@@ -59,7 +59,7 @@ object HolaMundo {
 }
 ```
 ## Mi recomendación
-Aprender un nuevo paradigma es buenisimo para poder ver la programación desde otra perspectiva y si logras aprender a utilizarlo tendras una nueva herramienta poderosisima para entrentarte a casi cualquier problema en la programación. Desde mi experiencia, pasar de la programación *imperativa* a la funcional es dificil, pero estoy convecido de que vale la pena.
+Aprender un nuevo paradigma es buenisimo para poder ver la programación desde otra perspectiva y si logras aprender a utilizarlo tendras una nueva herramienta poderosisima para enfrentarte a casi cualquier problema en la programación. Desde mi experiencia, pasar de la programación *imperativa* a la funcional es dificil, pero estoy convecido de que vale la pena.
 
 Si te interesa seguir aprendiendo del tema te recomiendo [Curso de Historia de la Programación: Lenguajes y Paradigmas](https://platzi.com/clases/historia-programacion/), [Curso de Programación Funcional con Scala](https://platzi.com/clases/scala/) y este tutorial de [Haskell](http://aprendehaskell.es/main.html).
 
