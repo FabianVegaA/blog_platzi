@@ -1,0 +1,7 @@
+let hanoi = fn n::int, src::str, tmp::str, dst::str -> int {
+    if n > 0 then {
+        hanoi(n-1, src, tmp, dst);
+        printLn("Move disk " + to_string(int) + " from " + src + " to " + dst);
+        hanoi(n-1, tmp, dst, src);
+    }
+}

@@ -12,7 +12,7 @@ Ahora que ya te has enfrentado a varios proyectos puedes comenzar con cosas más
 - **Construye una *API REST***: Para ello puedes usar *frameworks* como *Flask*, *Django* o *FastAPI*. Luego crear una página web simple y súbela a *Heroku* o algún otro servicio parecido.
 - **Crea un *scraper***: Te recomiendo ver los cursos de *scraper* y luego crear tu propio proyecto.
 
-> Es muy recomendable que cada uno de tus proyectos los compartas no importa que tan simple sea, siempre es valido, subelo a tu **GitHub** y crea tu perfil como programador. :raised_hands: 
+> Es muy recomendable que cada uno de tus proyectos los compartas no importa que tan simple sea, siempre es válido, subelo a tu **GitHub** y crea tu perfil como programador. :raised_hands: 
 
 ## ¿Qué es lo siguiente?
 Cuando hayas alcanzado el nivel de crear cualquiera de estas cosas tu imaginación es el límite, siempre te encontraras con desafíos, pero ten seguridad de que podrás con ellos.
