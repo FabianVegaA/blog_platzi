@@ -142,9 +142,8 @@ The recursion is a very important tool in the design of algorithms. This allows 
 let factorial = fn n::int -> int {
   if n <= 1 then{
     => 1;
-  } else {
-    => n * factorial(n-1);
   }
+  => n * factorial(n-1);
 }
 ```
 
@@ -190,7 +189,7 @@ $T(1)=2T(0)+1=1$
 $T(2)=2T(1)+1=3$
 $T(3)=2T(2)+1=7$
 ...
-$T(n)=2^n-1 \Rightarrow \Theta(2^n)$
+$T(n)=2^n-1 \Rightarrow O(2^n)$
 
 
 ---
@@ -207,7 +206,7 @@ def mergesort(arr):
 ``` Haskell
 let mergesort = fn arr::list -> list{
   let n = length(arr);
-  if length(arr) > 1 then {
+  if n > 1 then {
     let mid1 = mergesort(arr[0,floor(n/2)]);
     let mid2 = mergesort(arr[ceil(n/2),n]);
     => merge(mid1, mid2);
@@ -222,7 +221,66 @@ Then the amount of work units are when $T(0) = T(1) = 1$ and $T(n) = T(\lfloor \
 ---
 
 ### Backtracking
+One idea for solving complex problems is to build the solution incrementally, exploring different branches and backtracking if a path turns out to be a dead end. The natural way to describe these algorithms is by recursion.
 
+---
+## The 8 Queens Problem
+
+<style scoped>
+
+  img {
+  width: 30%;
+  float: right;
+  float: inline-end;
+  }
+  p:nth-child(3) {
+    display: inline-block;
+    margin-top: -350px;
+    width: 60%;
+  }
+
+</style>
+![The 8 Queens Problem Gif](https://upload.wikimedia.org/wikipedia/commons/b/b0/8queensminconflict.gif)
+
+This problem is a classic example of the backtracking algorithm. In this problem, we are given a board of size 8×8, and we are asked to place 8 queens on the board so that no two queens attack each other. 
+The idea is to place a queen on every possible position on the board, and if a path turns out to be a dead-end, we can backtrack and try another path, until we find a valid solution.
+
+
+
+
+
+
+
+
+---
+``` Python
+def solve(c):
+    global solutions
+
+    if c == 8:
+        solutions += 1
+        print(solutions, end=": ")
+        for r in range(8):
+            print(queen[r] + 1, end=" " if r < 7 else "\n")
+    else:
+        for r in range(8):
+            if rfree[r] and dd[c+r] and du[c+7-r]:
+                queen[c] = r
+                rfree[r] = dd[c+r] = du[c+7-r] = False
+                solve(c+1)
+                rfree[r] = dd[c+r] = du[c+7-r] = True
+
+
+queen = [0 for _ in range(8)]
+rfree = [True for _ in range(8)]
+du = [True for _ in range(15)]
+dd = [True for _ in range(15)]
+solutions = 0
+
+solve(0)
+
+print(f"\nThere are {solutions} solutions")
+```
 
 ---
 

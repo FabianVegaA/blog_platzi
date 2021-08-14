@@ -1,0 +1,20 @@
+let hanoi = fn n::int, src::str, tmp::str, dst::str -> int {
+    if n > 0 then {
+        hanoi(n-1, src, tmp, dst);
+        printLn("Move disk " + to_string(int) + " from " + src + " to " + dst);
+        hanoi(n-1, tmp, dst, src);
+    }
+}
+
+let mergesort = fn arr::list -> list{
+  let n = length(arr);
+  if n > 1 then {
+    let mid1 = mergesort(arr[0,floor(n/2)]);
+    let mid2 = mergesort(arr[ceil(n/2),n]);
+    => merge(mid1, mid2);
+  }
+  => arr;
+}
+
+-- TODO: Implement the merge function
+-- TODO: Implement the ceil and floor functions
