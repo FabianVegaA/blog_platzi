@@ -23,7 +23,6 @@ h1,h2,h3{
 }
 h1:hover, h2:hover, h3:hover{
   color:#55a1f3;
-  margin-left: 5%;
 }
 img[src*="notation.jpg"] {
   width: 45%;
@@ -31,6 +30,10 @@ img[src*="notation.jpg"] {
   float: inline-end;
   margin: 0; 
   padding:0;
+  transition: 1s;
+ }
+ img[src*="notation.jpg"]:hover{
+   width: 50%;
  }
  
 </style>
@@ -45,22 +48,27 @@ img[src*="notation.jpg"] {
 
 # Table of Contents
 
-1. [What is a Algorithm?](#what_is_a_algorithm)
+1. [What is an Algorithm?](#what_is_a_algorithm)
 2. [What is the Complxity of Algorithm?](#example2)
 3. [The different asymptotic notations](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+4. [How does program performance?]()
 5. [Use the recursion as your ally]()
-6. [How does program performance?]()
 
 ---
 
 <style>
   img {
     margin-left: 25%;
+    width: 40%;
+    transition: 2s;
+  }
+  img:hover{
+    margin-left:22%;
+    width: 45%;
   }
 </style>
 
-# What is a Algorithm?
+# What is an Algorithm?
 
 ![](img/algoritthm_definition.png)
 
@@ -110,7 +118,6 @@ It is defined as the amount of time and space required to solve a problem with s
   It's said that a is $f(x) \sim g(x)$ if $\lim_{x->\infty}{\frac{f(x)}{g(x)}} = 1$
 
 ---
-
 # <!-- fit --> **Break**
 
 # <!-- fit --> This is the moment for doing all your questions :wink:
@@ -119,6 +126,16 @@ It is defined as the amount of time and space required to solve a problem with s
 
 # A very brief introduction to algorithm design
 
+---
+
+# How does program performance?
+
+## The basic principles
+
+- **Sequence of actions**: The sum of costs of each action.
+- **Alternation**: The number of times that do one alternative.
+- **Cycles**: The evaluations of the cost of each iteration.
+- **Procedure calls**: The cost of each call to a procedure.
 ---
 
 # Use the recursion as your ally
@@ -193,16 +210,9 @@ $T(n)=2^n-1 \Rightarrow O(2^n)$
 
 
 ---
-### Mergesort
+### 2. Mergesort
 > We has the goal to sort an array of numbers. 
-<!-- ``` Python
-def mergesort(arr):
-  if len(arr) > 1:
-    mid1 = mergesort(arr[:n//2])
-    mid2 = mergesort(arr[n//2:])
-    return merge(mid1, mid2)
-  return arr
-``` -->
+
 ``` Haskell
 let mergesort = fn arr::list -> list{
   let n = length(arr);
@@ -220,23 +230,25 @@ Then the amount of work units are when $T(0) = T(1) = 1$ and $T(n) = T(\lfloor \
 
 ---
 
-### Backtracking
+### 3. Backtracking
 One idea for solving complex problems is to build the solution incrementally, exploring different branches and backtracking if a path turns out to be a dead end. The natural way to describe these algorithms is by recursion.
 
 ---
-## The 8 Queens Problem
+#### The 8 Queens Problem
 
 <style scoped>
 
   img {
   width: 30%;
   float: right;
-  float: inline-end;
   }
   p:nth-child(3) {
     display: inline-block;
     margin-top: -350px;
     width: 60%;
+  }
+  img:hover {
+  width: 35%;
   }
 
 </style>
@@ -244,12 +256,6 @@ One idea for solving complex problems is to build the solution incrementally, ex
 
 This problem is a classic example of the backtracking algorithm. In this problem, we are given a board of size 8×8, and we are asked to place 8 queens on the board so that no two queens attack each other. 
 The idea is to place a queen on every possible position on the board, and if a path turns out to be a dead-end, we can backtrack and try another path, until we find a valid solution.
-
-
-
-
-
-
 
 
 ---
@@ -283,26 +289,142 @@ print(f"\nThere are {solutions} solutions")
 ```
 
 ---
+<style scoped> 
+  img{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transition: 1s;
+  }
+  img:hover{
+    width: 21.5%;
+    top: 1%;
+  }
+  h3{
+    display: inline-block;
+    width: 60%;
+  }
+  p:nth-child(3) {
+    display: inline-block;
+    width: 70%;
+  }
+</style>
 
-### Branch and Bound
+![](/Algorithm_and_Complex/img/BB.png)
+### 4. Branch and Bound
+
+This is a set of techniques for searching an optimal node in the graph, based on the idea of generating new branches that are evaluated to prune the branches that do not lead to the goal, where the evaluation gives the bound.
+
+> This is also a **Greedy algorithm**.
+---
+#### Traveling Salesman Problem 
+<style scoped> 
+  img{
+    width: 30%;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    transition: 1s;
+  }
+  img:hover{
+    width: 35%;
+    
+  }
+  h4{
+    display: inline-block;
+    width: 60%;
+  }
+  p:nth-child(3) {
+    display: inline-block;
+    width: 60%;
+  }
+</style>
+
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/TSP.png)
+
+This problem is a classic example of the branch and bound algorithm. In this problem, we are given a set of N cities and we are asked to find the shortest route between the cities such that the distance between any two cities is less than or equal to the distance between the two cities in the shortest route.
 
 ---
 
-# How does program performance?
+<style scoped> 
+  img{
+    width: 30%;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    transition: 1s;
+  }
+  img:hover{
+    width: 35%;
+    
+  }
+  h3{
+    display: inline-block;
+    width: 60%;
+  }
+  p:nth-child(2) {
+    display: inline-block;
+    width: 60%;
+  }
+</style>
 
-## The basic principles
+### 5. A Star
 
-- Sequence of actions
-- Alternation
-- Cycles
-- Procedure calls
+Suppose you want to find a way from a point to another into a graph. This is an algorithm that allows giving a solution to this problem, prioritizing some paths.
+
+Some aplications of A* are:
+- Robotics
+- Games
+
+![](https://dl.dropboxusercontent.com/s/selx3h5jmy5bc9j/3DPathfinding2.gif)
 
 ---
+<style scoped> 
 
+img {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    transition: 1s;
+}
+img:hover {
+    width: 55%; 
+    right: 24%;   
+}
+p:nth-child(2) {
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  font-size: 50px;
+}
+</style>
+
+![](https://media.giphy.com/media/rjNuJMkbr8yuA/source.gif)
+
+to be continue...
+
+
+---
+<style scoped>
+  p:nth-child(3) {
+    opacity: 0;
+    color: purple;
+    transition: 1s;
+  }
+  p:nth-child(3):hover {
+    opacity: 1;
+  }
+</style>
 References:
 
 1. [Algorithms and Complexities](https://www.tutorialspoint.com/Algorithms-and-Complexities)
 2. [Analysis of algorithems little o and little omega notations](https://www.geeksforgeeks.org/analysis-of-algorithems-little-o-and-little-omega-notations/)
 3. [Recursion](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf)
 4. [A star](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
-5. [Merge sort animation](https://www.youtube.com/watch?v=JSceec-wEyw)
+5. [PathFinding]( https://qiao.github.io/PathFinding.js/visual/ ) :star:
+6. [Merge sort animation](https://www.youtube.com/watch?v=JSceec-wEyw)
+7. [Traveling Salesman Problem using Branch And Bound](https://www.geeksforgeeks.org/traveling-salesman-problem-using-branch-and-bound-2/)
+
+Enchulado por la novia, Camilú.
