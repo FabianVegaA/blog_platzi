@@ -5,7 +5,7 @@ marp: true
 
 size: 16:9
 footer: "Algorithms and Complexity by Fabián Vega"
-paginate: false
+paginate: true
 
 backgroundImage: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-029.jpg')
 style: |
@@ -48,9 +48,9 @@ img[src*="notation.jpg"] {
 
 # Table of Contents
 
-1. [What is an Algorithm?](#what_is_a_algorithm)
-2. [What is the Complxity of Algorithm?](#example2)
-3. [The different asymptotic notations](#third-example)
+1. [What is an Algorithm?]()
+2. [What is the Complxity of Algorithm?]()
+3. [The different asymptotic notations]()
 4. [How does program performance?]()
 5. [Use the recursion as your ally]()
 
@@ -157,10 +157,11 @@ The recursion is a very important tool in the design of algorithms. This allows 
 
 ``` Haskell
 let factorial = fn n::int -> int {
-  if n <= 1 then{
-    => 1;
-  }
-  => n * factorial(n-1);
+  if n <= 1 then {
+    return 1;
+  } 
+  
+  return n * factorial(n-1);
 }
 ```
 
